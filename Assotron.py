@@ -1,5 +1,6 @@
-#assotron version 0.0.0.2 pre alpha
+#assotron version 0.0.0.3 pre alpha
 import discord
+import random
 
 client = discord.Client()
 
@@ -64,4 +65,22 @@ async def on_message(message):
     if message.content == "samvup":
     await client.send_message(message.channel, "Aye I know that guy! B)")
 
+##incorporate this somehow for discord:
+##
+##def assify(str):
+## 
+##	strPieces = str.split( )
+## 
+##	index = random.randint(0, len(strPieces) - 1)
+## 
+##	strPieces[index] = "ass"
+##	s=" "
+##	print(s.join(strPieces))
+##	return
+## 
+## 
+## 
+##str = input()
+##assify(str)
+    
 client.run(INSERT_TOKEN_HERE)
